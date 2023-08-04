@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Jogador de Futebol</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Teste seus conhecimentos sobre jogadores de Futebol</h1>
+    </header>
+    <main>
+      <section>
+        <div class="box-content">
+          <div class="box-questions" style="display: block">
+            <h3>Pergunta 1: Qual a idade atual de Lionel Messi?</h3>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta1" data-resposta="a" /> a)
+                30 anos</label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta1" data-resposta="b" /> b)
+                34 anos</label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta1" data-resposta="c" /> c)
+                36 anos</label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta1" data-resposta="d" /> d)
+                39 anos</label
+              >
+            </p>
+          </div>
+          <div class="box-questions" style="display: none">
+            <h3>Pergunta 2: Qual a idade atual de Kylian Mbappé ?</h3>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta2" data-resposta="a" /> a)
+                19 anos</label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta2" data-resposta="b" /> b)
+                22 anos</label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta2" data-resposta="c" /> c)
+                25 anos</label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta2" data-resposta="d" /> d)
+                28 anos</label
+              >
+            </p>
+          </div>
+          <div class="box-questions" style="display: none">
+            <h3>Pergunta 3: Qual a idade atual de Cristiano Ronaldo?</h3>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta3" data-resposta="a" /> a)
+                32 anos</label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta3" data-resposta="b" /> b)
+                35 anos</label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta3" data-resposta="c" /> c)
+                37 anos</label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta3" data-resposta="d" /> d)
+                40 anos</label
+              >
+            </p>
+          </div>
+          <div class="box-questions" style="display: none">
+            <h3>Pergunta 4: Qual a idade atual de Neymar Jr.?</h3>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta4" data-resposta="a" /> a)
+                25 anos</label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta4" data-resposta="b" /> b)
+                28 anos</label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta4" data-resposta="c" /> c)
+                30 anos</label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta4" data-resposta="d" /> d)
+                33 anos</label
+              >
+            </p>
+          </div>
+          <div class="box-questions" style="display: none">
+            <h3>Pergunta 5: Qual a idade atual de Sergio Ramos?</h3>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta5" data-resposta="a" /> a)
+                29 anos</label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta5" data-resposta="b" /> b)
+                33 anos</label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta5" data-resposta="c" /> c)
+                35 anos</label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="pergunta5" data-resposta="d" /> d)
+                38 anos</label
+              >
+            </p>
+          </div>
+          <div id="answer-of">
+            <p>Parabéns, você acertou!</p>
+          </div>
+          <div id="answer-on">
+            <p>Que pena, você errou!</p>
+          </div>
+          <button id="verificar-btn" onclick="verificarResposta()">
+            Verificar
+          </button>
+          <button
+            id="proxima-btn"
+            onclick="proximaPergunta()"
+            style="display: none"
+          >
+            Próxima Pergunta
+          </button>
+        </div>
+      </section>
+      <div id="resultado-final" style="display: none">
+        <h2>Resultado Final:</h2>
+        <p>Posição: <span id="posicao-jogador"></span></p>
+        <p>Status de campeão: <span id="status-campeao"></span></p>
+      </div>
+    </main>
+
+    <script src="./assets/scripts.js"></script>
+  </body>
+</html>
